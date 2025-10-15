@@ -13,9 +13,8 @@ asdf install golangci-lint 1.64.2
 ## Develop
 
 ```bash
-go run main.go
-
-golangci-lint run
+make lint
+make run
 ```
 
 ## Docs

@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	// mylog.Basic()
+	mylog.Basic()
 	// mylog.JSONHandler()
 	// mylog.HandlerOptions()
 	// mylog.HandlerOptionsReplaceAttr()
@@ -13,5 +13,5 @@ func main() {
 	// mylog.ChildLogger()
 	// mylog.LogValuer()
 	// mylog.ErrorLogger()
-	mylog.ErrorStackLogger()
+	// mylog.ErrorStackLogger()
 }

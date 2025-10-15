@@ -5,6 +5,7 @@ import (
 	"os"
 )
 
+// DefaultLogger shows how to set the default logger
 func DefaultLogger() {
 	slog.SetDefault(slog.New(slog.NewJSONHandler(os.Stdout, nil)))
 

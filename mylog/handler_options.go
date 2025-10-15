@@ -16,6 +16,9 @@ import (
 
 const LevelTrace = slog.Level(-8) // more fine-grained than debug
 
+// HandlerOptions shows how to use slog.HandlerOptions to configure a handler
+// set the minimum level to log
+// optionally add source information (file and line number)
 func HandlerOptions() {
 	handler := slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{
 		Level: slog.LevelDebug, // set the minimum level to log
@@ -31,6 +34,9 @@ func HandlerOptions() {
 	logger.Log(context.Background(), LevelTrace, "a trace message", "data", 123)
 }
 
+// HandlerOptionsReplaceAttr shows how to use ReplaceAttr to customize log attributes
+// customize how the level is printed
+// transform the message to uppercase
 func HandlerOptionsReplaceAttr() {
 	opts := &slog.HandlerOptions{
 		Level: LevelTrace, // set the minimum level to log

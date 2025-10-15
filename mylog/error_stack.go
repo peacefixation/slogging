@@ -8,6 +8,8 @@ import (
 	xerrors "github.com/mdobak/go-xerrors"
 )
 
+// ErrorStackLogger shows how to use ReplaceAttr to log error stack traces
+// use the go-xerrors package to create errors with stack traces
 func ErrorStackLogger() {
 	handler := slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{
 		ReplaceAttr: replaceAttr,

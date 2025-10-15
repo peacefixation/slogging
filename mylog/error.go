@@ -31,6 +31,7 @@ func (e CustomErrorLogValuer) LogValue() slog.Value {
 	)
 }
 
+// ErrorLogger logs errors, including custom error types that implement the LogValue method
 func ErrorLogger() {
 	logger := slog.New(slog.NewJSONHandler(os.Stdout, nil))
 

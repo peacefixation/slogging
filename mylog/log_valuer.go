@@ -23,6 +23,7 @@ func (u UserLogValuer) LogValue() slog.Value {
 	)
 }
 
+// LogValuer shows how to use the LogValue method to customize how a type is logged
 func LogValuer() {
 	logger := slog.New(slog.NewJSONHandler(os.Stdout, nil))
 
