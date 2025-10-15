@@ -1,0 +1,10 @@
+linters:
+  default: none
+  enable:
+    - sloglint
+  disable:
+    - govet
+linters-settings:
+  sloglint:
+    attr-only: true
+    # kv-only: true
